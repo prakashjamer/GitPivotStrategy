@@ -1,7 +1,4 @@
-# Visual Studio
-=======
-﻿# Visual Studio
->>>>>>> feature/devarchitecture
+# Visual Studio / IDE
 .vs/
 .vscode/
 .idea/
@@ -13,6 +10,12 @@ bin/
 obj/
 Debug/
 Release/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
 
 # NuGet
 *.nupkg
@@ -25,23 +28,25 @@ packages/
 *.suo
 *.userosscache
 *.sln.docstates
-
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-
-# Visual Studio cache/options
-.vs/
+*.sln.user
 
 # Rider
-.idea/
 *.sln.iml
+riderModule.iml
 
 # Environment
 .env
 .env.local
+.env.development.local
+.env.production.local
 
 # Logs
+logs/
 *.log
+
+# Compiled files (.NET assemblies)
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
