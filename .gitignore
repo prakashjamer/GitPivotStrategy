@@ -1,7 +1,44 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Visual Studio
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
 
-/.vs/SignalRapp/CopilotIndices/17.14.1710.49791
-/.github
-/.vs/SignalRapp/FileContentIndex
+# Build output
+bin/
+obj/
+Debug/
+Release/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+
+# Visual Studio cache/options
+.vs/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
