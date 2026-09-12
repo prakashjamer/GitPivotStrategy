@@ -1,9 +1,44 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+# Visual Studio
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
 
-/.vs/ProjectEvaluation/signalrapp.metadata.v9.bin
-/.vs/SignalRapp/FileContentIndex/a03ac26a-8c64-4f8f-b003-eefdb8ed7847.vsidx
-/.vs/SignalRapp/FileContentIndex/d2eb6537-dd77-493d-a117-5f3c066bc47f.vsidx
-/.vs/SignalRapp/FileContentIndex/bc37c770-1311-46db-91c3-644cf12a2022.vsidx
-/.vs/ProjectEvaluation/signalrapp.projects.v9.bin
+# Build output
+bin/
+obj/
+Debug/
+Release/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+
+# Visual Studio cache/options
+.vs/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
