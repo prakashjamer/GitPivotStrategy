@@ -1,2 +1,0 @@
-wwwroot\chat.js
-wwwroot\SignalR.html
