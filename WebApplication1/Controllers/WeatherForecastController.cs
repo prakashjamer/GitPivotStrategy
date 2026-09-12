@@ -37,5 +37,20 @@ namespace WebApplication1.Controllers
             })
             .ToArray();
         }
+        public IEnumerable<WeatherForecast3> Getdata3()
+        {
+            //List<string> offers = new List<string>();
+            //offers.Add("20% Off on IPhone 12");
+            //offers.Add("15% Off on HP Pavillion");
+            //offers.Add("25% Off on Samsung Smart TV");
+            messageHub.Clients.All.SendOffersToUser("QQQQQQ" + Guid.NewGuid().ToString());
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast3
+            {
+                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
     }
 }
