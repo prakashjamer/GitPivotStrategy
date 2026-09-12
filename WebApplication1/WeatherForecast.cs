@@ -11,6 +11,7 @@ namespace WebApplication1
         public string? Summary { get; set; }
     }
 
+
     public class WeatherForecast2
 	{
         public DateOnly Date { get; set; }
