@@ -1,7 +1,7 @@
 # Visual Studio / IDE
-.vs/
-.vscode/
-.idea/
+/.vs/
+/.vscode/
+/.idea/
 *.swp
 *.swo
 
